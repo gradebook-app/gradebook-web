@@ -19,6 +19,7 @@ export const useStyles = makeStyles(theme => ({
         height: "clamp(200px, 30vw, 300px)",
         boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.35), 0px 0px 10px 0px rgba(0, 0, 0, 0.35)",
         borderRadius: 5,
+        backgroundColor: "rgba(255, 255, 255, 0.01)",
     },
     author: {
         color: "rgba(255, 255, 255, 0.5)",
