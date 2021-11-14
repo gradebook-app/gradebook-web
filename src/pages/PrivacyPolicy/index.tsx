@@ -139,12 +139,12 @@ const PrivacyPolicy = () => {
            How do we keep your information safe?
            </SubHeader>
             <Paragraph>
-            We aim to protect your personal information through a system of organizational and techical security measures.
-                       We have implemented appropriate techical and organizational security measures designed to protect the security 
+            We aim to protect your personal information through a system of organizational and technical security measures.
+                       We have implemented appropriate technical and organizational security measures designed to protect the security 
                        of any personal information we process. However, despite our safeguards and efforts to secure your information,
                        no electronic transmission over the internet or information storage technology can be guaranteed to be 100% secure, so we cannot
                        promise or guarantee that hackers, cybercriminals, or other unauthorized third parties will not be able to defeat our security, and improperly 
-                       collect, access, steal, or modify your information. Although we will do our best to protect your personal information, transmission of personal information to 
+                       collect, access, steal, or modify your information. Although we will do our best to protect your personal information, the transmission of personal information to 
                        and from our App is at your own risk. You should only access the App within a secure environment.
             </Paragraph>
             <SubHeader>
