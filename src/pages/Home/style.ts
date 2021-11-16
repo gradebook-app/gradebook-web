@@ -46,5 +46,16 @@ export const useStyles = makeStyles(theme => ({
     },
     buttonGroup: {
         display:'flex',
+        color: "rgba(255, 255, 255, 0.35)",
+        margin: "10px 0px",
+    },
+    link: {
+        margin: "0px 10px",
+        color: "rgba(255, 255, 255, 0.35)",
+    },
+    appstoreBadge: {
+        margin: 15,
+        width: 175,
+        height: "auto",
     }
 }));
