@@ -15,8 +15,8 @@ export const useStyles = makeStyles(theme => ({
         fontWeight: 700,
     },
     icon: { 
-        width: "clamp(200px, 30vw, 300px)",
-        height: "clamp(200px, 30vw, 300px)",
+        width: "clamp(275px, 20vw, 350px)",
+        height: "clamp(275px, 20vw, 350px)",
         boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.35), 0px 0px 10px 0px rgba(0, 0, 0, 0.35)",
         borderRadius: 5,
         backgroundColor: "rgba(255, 255, 255, 0.01)",

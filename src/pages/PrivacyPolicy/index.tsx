@@ -57,7 +57,7 @@ const PrivacyPolicy = () => {
                     Thank you for choosing to be part of our Community at Genesus 
                     ("Company", "we", "us", or "our"). We are committed to protecting 
                     your personal information and your right to privacy. If you have any questions
-                    or concerns please contact us at <a target="_blank" className={classes.link} href="mailto:genesus@mahitm.com">genesus@mahitm.com</a>.
+                    or concerns please contact us at <a target="_blank" rel="noopener noreferrer" className={classes.link} href="mailto:genesus@mahitm.com">genesus@mahitm.com</a>.
                 </>
             </Paragraph>
             <Paragraph>
@@ -163,7 +163,7 @@ const PrivacyPolicy = () => {
             Based on the applicable law of your country, you may have the right to request access to 
                         your personal information we collect from you, change that information, or delete it in some
                         circumstances. To request to review, update, or delete your personal information, please submit 
-                        a request form by contacting us at <a target="_blank" className={classes.link} href="mailto:genesus@mahitm.com">genesus@mahitm.com</a>.
+                        a request form by contacting us at <a target="_blank" rel="noopener noreferrer" className={classes.link} href="mailto:genesus@mahitm.com">genesus@mahitm.com</a>.
             </>
             </Paragraph>
         </section>
