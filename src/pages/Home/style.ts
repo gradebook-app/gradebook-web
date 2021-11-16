@@ -14,12 +14,24 @@ export const useStyles = makeStyles(theme => ({
         fontSize: 35,
         fontWeight: 700,
     },
-    icon: { 
+    iconContainer: { 
         width: "clamp(275px, 20vw, 350px)",
         height: "clamp(275px, 20vw, 350px)",
         boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.35), 0px 0px 10px 0px rgba(0, 0, 0, 0.35)",
         borderRadius: 5,
         backgroundColor: "rgba(255, 255, 255, 0.01)",
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    iconSections: {
+        display: 'flex',
+        transform: "rotateX(35deg)",
+        transformStyle:"preserve-3d"
+    },
+    icon: {
+        width: "clamp(175px, 13.5vw, 245px)",
+        height: "clamp(175px, 13.5vw, 245px)",
     },
     author: {
         color: "rgba(255, 255, 255, 0.5)",

@@ -1,17 +1,54 @@
-import React from 'react';
+import React, { useCallback, useEffect, useRef } from 'react';
 import { useStyles } from './style';
-import GradeBookLogo from "../../assets/gradebook-logo.png";
+import GradeBookLogoLeft from "../../assets/gradebook-left.svg";
+import GradeBookLogoRight from "../../assets/gradebook-right.svg";
 import AppstoreBadge from "../../assets/appstore-badge.svg";
 import OpenSource from '../../components/OpenSource';
+import gsap from "gsap";
 
-const Home = () => {
+interface IHomeProps {};
+
+const Home : React.FC<IHomeProps> = () => {
     const classes = useStyles();
+
+    const iconLeftRef = useRef<HTMLImageElement | null>(null);
+    const iconRightRef = useRef<HTMLImageElement | null>(null);
+
+    const handleIconAnimation = useCallback(() => {
+        gsap.fromTo(
+            iconLeftRef.current,
+            { rotateY: 90, transformOrigin: "right" },
+            { rotateY: 10, duration: 1 },
+        )
+        gsap.fromTo(
+            iconRightRef.current,
+            { rotateY: -90, transformOrigin: "left" },
+            { rotateY: -10, duration: 1 },
+        )
+    }, []);
+
+    useEffect(handleIconAnimation, [ handleIconAnimation ]);
 
     return (
         <section className={classes.container}>
             <h1 className={classes.header}>Genesus</h1>
             <p className={classes.author}>Developed & Designed by Mahit Mehta</p>
-            <img className={classes.icon} src={GradeBookLogo} alt="app-icon"/>
+            <div className={classes.iconContainer}>
+                <div className={classes.iconSections}>
+                    <img 
+                        ref={iconLeftRef}
+                        className={classes.icon} 
+                        src={GradeBookLogoLeft} 
+                        alt="app-icon-left"
+                    />
+                    <img 
+                        ref={iconRightRef}
+                        className={classes.icon} 
+                        src={GradeBookLogoRight} 
+                        alt="app-icon-right"
+                    />
+                </div>
+            </div>
             <OpenSource />
             <div className={classes.buttonGroup}>
                 <a
@@ -23,8 +60,6 @@ const Home = () => {
                 <span>|</span>
                  <a
                     className={classes.link}
-                    rel="noopener noreferrer"
-                    target="_blank"
                     href="/privacy"
                 >Privacy Policy</a>
             </div>
