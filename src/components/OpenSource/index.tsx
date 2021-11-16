@@ -9,7 +9,7 @@ const OpenSource = () => {
             target="_blank"
             className={classes.link} 
             rel="noopener noreferrer" 
-            href="https://github.com/gradebook-app/gradebook">
+            href="https://github.com/gradebook-app">
             <div className={classes.container}>
                 <p className={classes.text}>
                     This is an Open Source Project. 
