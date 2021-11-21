@@ -32,7 +32,7 @@ export const useStyles = makeStyles(theme => ({
     icon: {
         width: "clamp(175px, 13.5vw, 245px)",
         height: "clamp(175px, 13.5vw, 245px)",
-        filter: "drop-shadow(30px 10px 4px #4444dd)",
+        // filter: "drop-shadow(30px 10px 4px #4444dd)",
     },
     author: {
         color: "rgba(255, 255, 255, 0.5)",
