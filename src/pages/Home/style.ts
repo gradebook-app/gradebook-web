@@ -27,11 +27,12 @@ export const useStyles = makeStyles(theme => ({
     iconSections: {
         display: 'flex',
         transform: "rotateX(35deg)",
-        transformStyle:"preserve-3d"
+        transformStyle:"preserve-3d",
     },
     icon: {
         width: "clamp(175px, 13.5vw, 245px)",
         height: "clamp(175px, 13.5vw, 245px)",
+        filter: "drop-shadow(30px 10px 4px #4444dd)",
     },
     author: {
         color: "rgba(255, 255, 255, 0.5)",
