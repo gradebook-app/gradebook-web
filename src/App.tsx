@@ -4,8 +4,6 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-d
 import Home from './pages/Home';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 
-const reload = () => window.location.reload();
-
 function App() {
   return (
     <Router>
@@ -13,15 +11,9 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/privacy" component={PrivacyPolicy} />
         <Redirect from="/sitemap.xml" to="/static/sitemap.xml" />
-        <Route path="/static/sitemap.xml" render={() => {
-          reload();
-          return null;
-        }} />
+        <Route path="/static/sitemap.xml"/>
            <Redirect from="/robots.xml" to="/static/sitemap.xml" />
-        <Route path="/static/robots.xml" render={() => {
-          reload();
-          return null;
-        }} />
+        <Route path="/static/robots.xml" />
         <Redirect to="/" />
       </Switch>
     </Router>
