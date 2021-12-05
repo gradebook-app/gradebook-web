@@ -17,6 +17,11 @@ function App() {
           reload();
           return null;
         }} />
+           <Redirect from="/robots.xml" to="/static/sitemap.xml" />
+        <Route path="/static/robots.xml" render={() => {
+          reload();
+          return null;
+        }} />
         <Redirect to="/" />
       </Switch>
     </Router>
