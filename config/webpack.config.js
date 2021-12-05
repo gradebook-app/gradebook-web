@@ -740,7 +740,8 @@ module.exports = function (webpackEnv) {
         }),
         new CopyWebpackPlugin({
           patterns: [
-            { from: path.join(__dirname, "../public/sitemap.xml"), to: "" }
+            { from: path.join(__dirname, "../public/sitemap.xml"), to: "/" },
+            { from: path.join(__dirname, "../public/robots.txt"), to: "/" }
           ],
         })
     ].filter(Boolean),
