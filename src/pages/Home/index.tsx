@@ -66,6 +66,16 @@ const Home : React.FC<IHomeProps> = () => {
             <a href="https://apps.apple.com/us/app/genesus/id1594653519" target="_blank" rel="noopener noreferrer">
                 <img className={classes.appstoreBadge} src={AppstoreBadge} alt="appstore-badge"/>
             </a>
+            <div>
+                <a 
+                    style={{ textDecoration: "none" }}
+                    className={classes.link}
+                    href="https://gradebook-apks.s3.us-east-2.amazonaws.com/genesus.apk" 
+                    target="_blank" 
+                    rel="noopener noreferrer">
+                        Download Android<sup className={classes.beta}>beta</sup> APK.
+                </a>
+            </div>
         </section>
     )
 }

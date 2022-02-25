@@ -70,5 +70,12 @@ export const useStyles = makeStyles(theme => ({
         margin: 15,
         width: 175,
         height: "auto",
+    },
+    beta: {
+        color: "#3DDC84",
+        marginLeft: 2.5,
+        textTransform: 'uppercase',
+        fontWeight: 600,
+        fontSize: "0.65em"
     }
 }));
