@@ -17,3 +17,4 @@ appnexus.com, 13794, RESELLER, f5ab79cb980f11d1
 video.unrulymedia.com, 4270213217, RESELLER
 pubmatic.com, 161648, RESELLER, 5d62403b186f2ace
 contextweb.com, 562718, RESELLER, 89ff185a4c4e857c
+adingo.jp, 28584, RESELLER
